@@ -9,9 +9,10 @@ Host: <%= ENV['NAGIOS_HOSTALIAS'] %>
 State: <%= ENV['NAGIOS_HOSTSTATE'] %>
 Address: <%= ENV['NAGIOS_HOSTADDRESS'] %>
 
+Date/Time: <%= ENV['NAGIOS_LONGDATETIME'] %>
+
 Additional Info:
 
 <%= ENV['NAGIOS_HOSTOUTPUT'] %>
-
-Date/Time: <%= ENV['NAGIOS_LONGDATETIME'] %>
+<%= ENV['NAGIOS_LONGHOSTOUTPUT'] %>
 
