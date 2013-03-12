@@ -1,0 +1,19 @@
+From: <<%= ENV['NAGIOS_ADMINEMAIL'] %>>
+To: <<%= ENV['NAGIOS_CONTACTEMAIL'] %>>
+Subject: ** <%= ENV['NAGIOS_NOTIFICATIONTYPE'] %> Service Alert: <%= ENV['NAGIOS_HOSTALIAS'] %>/<%= ENV['NAGIOS_SERVICEDESC'] %> is <%= ENV['NAGIOS_SERVICESTATE'] %> **
+
+***** Nagios *****
+
+Notification Type: <%= ENV['NAGIOS_NOTIFICATIONTYPE'] %>
+
+Service: <%= ENV['NAGIOS_SERVICEDESC'] %>
+Host: <%= ENV['NAGIOS_HOSTALIAS'] %>
+Address: <%= ENV['NAGIOS_HOSTADDRESS'] %>
+State: <%= ENV['NAGIOS_SERVICESTATE'] %>
+
+Date/Time: <%= ENV['NAGIOS_LONGDATETIME'] %>
+
+Additional Info:
+
+<%= ENV['NAGIOS_SERVICEOUTPUT'] %>
+
